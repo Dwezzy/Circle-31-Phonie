@@ -4,13 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+    <title>Phonie</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <h2>make some magic here!!</h2>
+    <section>
+      <header>
+        <h4 class="cirle-logo">Circle 31</h4>
+      </header>
+    </section>
+
+    <section class="description">
+      <h1>Track Network By Phone Number</h1>
+      <p>
+        Extract Network from phone numbers using Circle 31 Network Tracking
+        tool.
+      </p>
+    </section>
+
+    <section>
+      <form>
+        <div class="country">
+          <label for="country">
+            <div class="form_name">Country <img src="./Flag_of_Nigeria.gif" alt="flag"></div>
+          </label>
+          <input
+            id="country"
+            name="country"
+            type="country"
+            placeholder="Country"
+          />
+        </div>
+
+        <!-- <section class="network_logo">
+          Logo of Tracked Network will show here😎
+      </section> -->
+        <div class="phone_number">
+          <label for="tel">
+             <div class="form_name">Phone <!-- <img src="./airtel.png" alt="Airtel"> <img src="./mtn.jpg" alt="MTN"> <img src="./glo.jpg" alt="Glo"> <img src="./9mobile.png" alt="9Mobile">  --> </div>
+          </label>
+          <input id="phone" name="phone" type="tel" placeholder="Phone Number" />
+          <p> E.g (Nigeria): 0802 123 4567 </p>
+        </div>
+
+        <div class="submit">
+          <input id="submit" type="submit" value="Validate Number" />
+          <a href="*">Reset</a>
+        </div>
+      </form>
+    </section>
+
+
+    <footer>
+      <p>&copy;2022 AltSchool Circle-31 Class</p>
+    </footer>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
