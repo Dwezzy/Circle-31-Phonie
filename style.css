@@ -1,0 +1,33 @@
+.topSection{
+    background-color: #6395ec;
+    color: #ffffff;
+    padding: 15px;
+    line-height: 0.3;
+}
+#submitButton{
+    background-color: #6395ec;
+    border-style: solid;
+    padding: 5px 7px;
+    color: #ffffff;
+    border-width: 0.5px;
+    border-color: #ffffff;
+}
+#btns{
+    display: flex;
+}
+#resetButton{
+    background-color: #ffffff;
+    border-style: solid;
+    padding: 5px 7px;
+    color: #6395ec;
+    border-color: #6395ec;
+    border-width: 0.5px;
+}
+.footNote{
+    color: #6395ec;
+}
+hr{
+    border-style: solid;
+    border-radius: 0.1px;
+    border-color: grey;
+}
