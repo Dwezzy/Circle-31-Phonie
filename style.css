@@ -1,3 +1,66 @@
+/* nav bar styling starts here */
+.container{
+    margin: 0;
+    padding: 0;
+    }
+    
+    nav{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #6395ec;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+    }
+    .nav li{
+        list-style: none;
+        margin: 10px;
+    }
+    .logo{
+        letter-spacing: 3px;
+    }
+    .burger{
+        display: none;
+    }
+    .fa-xmark{
+        display: none;
+    }
+    
+    @media screen and (max-width: 678px){
+        .burger{
+            display: inline-block;
+        }
+        .nav{
+            margin: 0;
+            background: #6395ec;
+            color: #ffffff;
+            position: absolute;
+            right: -100%;
+            top: 90px;
+            width: 50%;
+            height: calc(70% - 90px);
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0;
+        }
+        .navLink{
+            text-align: center;
+        }
+        .navActive{
+            right: 0;
+            
+        }
+        .fa-xmark{
+            display: none;
+        }
+    }
+
+ /* nav bar styling ends here */   
 .topSection{
     background-color: #6395ec;
     color: #ffffff;
