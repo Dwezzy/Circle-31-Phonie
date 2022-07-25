@@ -2,6 +2,7 @@
 .container{
     margin: 0;
     padding: 0;
+    text-align: center;
     }
     
     nav{
@@ -23,6 +24,10 @@
     }
     .logo{
         letter-spacing: 3px;
+        color: black;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 10px;
     }
     .burger{
         display: none;
@@ -30,7 +35,7 @@
     .fa-xmark{
         display: none;
     }
-    
+    /* responsive styling starts */
     @media screen and (max-width: 678px){
         .burger{
             display: inline-block;
@@ -58,14 +63,31 @@
         .fa-xmark{
             display: none;
         }
+        .topSection p{
+        line-height: 1;
+      }  
     }
 
+    /* responsive styling ends*/
+
  /* nav bar styling ends here */   
+
 .topSection{
     background-color: #6395ec;
     color: #ffffff;
-    padding: 15px;
+    padding: 20px;
     line-height: 0.3;
+    height: 100px;
+    text-align: center;
+}
+.telLabel{
+    padding-top: 10px;
+    }
+
+#numberInput{
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 #submitButton{
     background-color: #6395ec;
@@ -74,9 +96,13 @@
     color: #ffffff;
     border-width: 0.5px;
     border-color: #ffffff;
+    width: 140px;
+    margin-bottom: 20px;
 }
 #btns{
     display: flex;
+    justify-content: center;
+    align-content: center;
 }
 #resetButton{
     background-color: #ffffff;
@@ -85,12 +111,21 @@
     color: #6395ec;
     border-color: #6395ec;
     border-width: 0.5px;
+    width: 140px;
+}
+.resetBtnLink{
+    padding-left: 15px;
+    color: #6395ec;
 }
 .footNote{
     color: #6395ec;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 hr{
     border-style: solid;
     border-radius: 0.1px;
     border-color: grey;
 }
+

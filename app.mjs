@@ -39,7 +39,6 @@ function onClick(){
    numberInput.value = "";
 }
 
-
     const header = document.querySelector('h2');
     if(header) {
       header.textContent = 'make some magic here!!';
