@@ -45,10 +45,10 @@
             background: #6395ec;
             color: #ffffff;
             position: absolute;
-            right: -100%;
+            display: none;
             top: 90px;
             width: 50%;
-            height: calc(70% - 90px);
+            height: auto;
             flex-direction: column;
             justify-content: space-around;
             padding: 0;
@@ -58,14 +58,18 @@
         }
         .navActive{
             right: 0;
-            
+            display: inline-block;
         }
+        
         .fa-xmark{
             display: none;
         }
-        .topSection p{
+        .topSection {
         line-height: 1;
+        height: auto;
+        font-size: 2.5vw;
       }  
+      
     }
 
     /* responsive styling ends*/
@@ -88,6 +92,7 @@
     height: 20px;
     margin-top: 5px;
     margin-bottom: 20px;
+    padding: .5rem;
 }
 #submitButton{
     background-color: #6395ec;
@@ -101,8 +106,8 @@
 }
 #btns{
     display: flex;
+    text-align: center;
     justify-content: center;
-    align-content: center;
 }
 #resetButton{
     background-color: #ffffff;
@@ -129,3 +134,27 @@ hr{
     border-color: grey;
 }
 
+#logos {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  right: 40%;
+  bottom: 20%;
+}
+
+#logos img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.form-input {
+  margin: 2rem auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
