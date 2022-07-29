@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 /* nav bar styling starts here */
-.container{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #6395ec, #9997ec);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  margin: 5rem auto;
+  width: 50%;
+  background: #fff;
+  box-shadow: .2rem .2rem .5rem, rgba(0, 0, 0, .2),
+    -.2rem, -.2rem .5rem rgba(0, 0, 0, .8) inset;
+  border-radius: 2rem;
+}
+
     
     nav{
         width: 100%;
@@ -23,9 +40,14 @@
         margin: 10px;
     }
     .logo{
+      font-size: 3rem;
+      background: linear-gradient(to right, #6395ec, #9997ec);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: bold;
+      font-family: serif;
         letter-spacing: 3px;
-        color: black;
-        border-style: solid;
         border-radius: 10px;
         padding: 10px;
     }
@@ -80,8 +102,7 @@
     background-color: #6395ec;
     color: #ffffff;
     padding: 20px;
-    line-height: 0.3;
-    height: 100px;
+    line-height: 1;
     text-align: center;
 }
 .telLabel{
@@ -89,8 +110,7 @@
     }
 
 #numberInput{
-    height: 20px;
-    margin-top: 5px;
+  margin-top: -10px;
     margin-bottom: 20px;
     padding: .5rem;
 }
@@ -98,11 +118,12 @@
     background-color: #6395ec;
     border-style: solid;
     padding: 5px 7px;
-    color: #ffffff;
+    color: #fff;
     border-width: 0.5px;
-    border-color: #ffffff;
+    border-color: #fff;
     width: 140px;
     margin-bottom: 20px;
+  font-weight: bold;
 }
 #btns{
     display: flex;
@@ -138,14 +159,15 @@ hr{
   height: 2rem;
   width: 2rem;
   position: absolute;
-  right: 40%;
-  bottom: 20%;
+  right: 15%;
+  bottom: 21%;
 }
 
 #logos img {
   height: 100%;
   width: 100%;
   vertical-align: middle;
+  display: none;
 }
 
 .form-input {
@@ -157,4 +179,32 @@ hr{
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.topSection h1 {
+  margin: 2rem 0;
+}
+
+.topSection p {
+  margin-bottom: 1rem;
+}
+
+p#suggest {
+  padding: 0;
+  margin: 0;
+/*   font-size: .6rem; */
+  font-weight: lighter;
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 2px solid #000;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 75%;
+  }
 }

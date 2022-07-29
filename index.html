@@ -1,84 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/129fd72ae2.js" crossorigin="anonymous"></script>
-    <title>Phonie</title>
-</head>
-<body>
- <div class="container"> 
- <div class="container">
-    <nav>
-      <div>
-        <h4 class="logo">Circle 31</h4>
-      </div>
-      <div>
-        <ul class="nav">
-          <li class="navLink">home</li>
-          <li class="navLink">pricing</li>
-          <li class="navLink">customers</li>
-          <li class="navLink">help</li>
-          <li class="navLink">register</li>
-          <li class="navLink">login</li>
-        </ul>
-        <div class="burger">
-            <i class="fa-solid fa-bars"></i>
-         </div>
-      </div>
-      
-    </nav>
-</div>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/129fd72ae2.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="images/Flag_of_Nigeria.gif">
+  <title>Phonie</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div>
+          <h4 class="logo">Circle 31</h4>
+        </div>
+<!--         <div>
+          <ul class="nav">
+            <li class="navLink">home</li>
+            <li class="navLink">pricing</li>
+            <li class="navLink">customers</li>
+            <li class="navLink">help</li>
+            <li class="navLink">register</li>
+            <li class="navLink">login</li>
+          </ul>
+          <div class="burger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div> -->
+      </nav>
+    </header>
 
     <section class="topSection">
-        <h1 class="">Track Network By Phone Number</h1>
-        <p>
-          Extract Networks from phone numbers using Circle 31 Network Tracking
-          tool.
-        </p>
+      <h1>Track Network By Phone Number</h1>
+      <p>
+        Extract Networks from phone numbers using Circle 31 Network Tracking
+        tool.
+      </p>
     </section>
 
-<section class="valueSection">
-<div class="form-input">
-  <label class="telLabel">Phone Number:</label>
-  <div id="logos">
-    <img src="images/9mobile.png" alt="carrier logo">
+    <section class="valueSection">
+      <div class="form-input">
+        <label class="telLabel" for="numberInput">Input Your Phone Number:</label>
+        <div id="logos">
+          <img src="" alt="" id="networkLogo">
+        </div>
+
+        <p id="suggest"></p>
+
+        <input type="tel" name="numberInput" id="numberInput" placeholder="0802-123-4567" autocomplete="true" aria-autocomplete="true" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+      </div>
+
+      <div id="btns">
+        <div>
+          <button type="submit" id="submitButton">Validate Number</button>
+        </div>
+
+        <div>
+          <a href="./index.html" class="resetBtnLink" id="reset">Reset</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="result">
+      <span class="res"> </span>
+    </section>
+    <footer>
+      <p class="footNote">&copy;2022 AltSchool Circle-31 Class</p>
+    </footer>
   </div>
 
-<input type="tel" name="" id="numberInput" placeholder="0802 123 4567"> 
-</div>
 
-<div id="btns">
-
-<div>
-<button type="submit" id="submitButton">Validate Number</button>
-</div>
-
-<div>
-<a href="./index.html" class="resetBtnLink" id="reset"> Reset <!--  <button type="submit" id="resetButton">Reset</button> --> </a>
-</div>
-
-</div>
-
-</section>
-<section class="result">
-    <span class="res">      </span>
-</section>
-<hr>
-<footer>
-    <small class="footNote">&copy;2022 AltSchool Circle-31 Class</small>
-  </footer>
-</div>
+  <script src="script.js"></script>
 
 
-<script src="script.js"></script>
-
-
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
