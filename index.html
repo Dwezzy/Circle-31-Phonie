@@ -18,7 +18,7 @@
         <div>
           <h4 class="logo">Circle 31</h4>
         </div>
-<!--         <div>
+        <!--         <div>
           <ul class="nav">
             <li class="navLink">home</li>
             <li class="navLink">pricing</li>
@@ -43,31 +43,31 @@
     </section>
 
     <section class="valueSection">
-      <div class="form-input">
-        <label class="telLabel" for="numberInput">Input Your Phone Number:</label>
-        <div id="logos">
-          <img src="" alt="" id="networkLogo">
+      <form action="#">
+        <div class="form-input">
+          <label class="telLabel" for="numberInput">Input Your Phone Number:</label>
+          <div id="logos">
+            <img src="" alt="" id="networkLogo">
+          </div>
+
+          <p id="suggest"></p>
+          <p id="detect"></p>
+
+          <input type="tel" name="numberInput" id="numberInput" placeholder="0802-123-4567" required
+            pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
         </div>
 
-        <p id="suggest"></p>
-
-        <input type="tel" name="numberInput" id="numberInput" placeholder="0802-123-4567" autocomplete="true" aria-autocomplete="true" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
-      </div>
-
-      <div id="btns">
-        <div>
+        <div id="btns">
           <button type="submit" id="submitButton">Validate Number</button>
-        </div>
-
-        <div>
           <a href="./index.html" class="resetBtnLink" id="reset">Reset</a>
         </div>
-      </div>
+      </form>
     </section>
-    
+
     <section class="result">
       <span class="res"> </span>
     </section>
+
     <footer>
       <p class="footNote">&copy;2022 AltSchool Circle-31 Class</p>
     </footer>

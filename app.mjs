@@ -4,10 +4,10 @@ function startApp() {
     // so create and use/call additional functions from here
   
     // pls remove the below and make some magic in here!
-    // console.log('make magic in here!');
+
   
-let nav = document.querySelector(".nav")
-let burger = document.querySelector(".burger i")
+// let nav = document.querySelector(".nav")
+// let burger = document.querySelector(".burger i")
 let numberInput = document.querySelector("#numberInput");
 let submitButton = document.querySelector("#submitButton");
 let input_n = numberInput.value;
@@ -16,15 +16,15 @@ let reg = /(?:^(\+234|234|0)((90)([1-9])|((70)([1-9]))|((80)([2-9]))|((81)([0-9]
 let res = document.querySelector(".res");
 
 //event listeners
-burger.addEventListener("click", clickNavBar)
+// burger.addEventListener("click", clickNavBar)
 submitButton.addEventListener("click",onClick);
 
 //to toggle nav bar
-function clickNavBar(){
-    burger.classList.toggle("fa-bars");
-    burger.classList.toggle("fa-xmark");
-    nav.classList.toggle("navActive");
-}
+// function clickNavBar(){
+//     burger.classList.toggle("fa-bars");
+//     burger.classList.toggle("fa-xmark");
+//     nav.classList.toggle("navActive");
+// }
 
 
 function onClick(){
@@ -36,14 +36,9 @@ function onClick(){
    else{
     res.textContent = `${numberInput.value} is a valid number`
    }
-   numberInput.value = "";
+   // numberInput.value = "";
 }
 
-    const header = document.querySelector('h2');
-    if(header) {
-      header.textContent = 'make some magic here!!';
-    }
-  };
   
   // ======= DO NOT EDIT ============== //
   export default startApp;

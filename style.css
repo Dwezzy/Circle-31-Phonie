@@ -123,7 +123,9 @@ body {
     border-color: #fff;
     width: 140px;
     margin-bottom: 20px;
-  font-weight: bold;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
 }
 #btns{
     display: flex;
@@ -138,6 +140,8 @@ body {
     border-color: #6395ec;
     border-width: 0.5px;
     width: 140px;
+    user-select: none;
+    cursor: pointer;
 }
 .resetBtnLink{
     padding-left: 15px;
@@ -160,7 +164,7 @@ hr{
   width: 2rem;
   position: absolute;
   right: 15%;
-  bottom: 21%;
+  bottom: 19%;
 }
 
 #logos img {
@@ -192,7 +196,6 @@ hr{
 p#suggest {
   padding: 0;
   margin: 0;
-/*   font-size: .6rem; */
   font-weight: lighter;
 }
 
@@ -206,5 +209,10 @@ footer {
 @media (max-width: 770px) {
   .container {
     width: 75%;
+  }
+
+  #logos {
+    right: 5%;
+    bottom: 15%;
   }
 }
