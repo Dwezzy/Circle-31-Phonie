@@ -41,35 +41,35 @@ document.getElementById("submitButton").addEventListener("click", (e) => {
 
 /* FUNCTION TO AUTO - SUGGESTION */
 
-document.getElementById("numberInput").addEventListener("keypress", () => {
+// document.getElementById("numberInput").addEventListener("keypress", () => {
   // alert("okay")
-  let x = document.getElementById("numberInput").value;
-  let z = x.slice(0, 1);
-  let b = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  let c = b[Math.floor(Math.random() * 10)];
-  let d = b[Math.floor(Math.random() * 10)];
-  let e = b[Math.floor(Math.random() * 10)];
-  let f = b[Math.floor(Math.random() * 10)];
-  let g = b[Math.floor(Math.random() * 10)];
-  let h = b[Math.floor(Math.random() * 10)];
-  let i = b[Math.floor(Math.random() * 10)];
-  let j = b[Math.floor(Math.random() * 10)];
-  let k = b[Math.floor(Math.random() * 10)];
-  let l = b[Math.floor(Math.random() * 10)];
-  let a = z + "*" + c + d + e + f + g + h + i + j + k + l;
+  // let x = document.getElementById("numberInput").value;
+  // let z = x.slice(0, 1);
+  // let b = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+//   let c = b[Math.floor(Math.random() * 10)];
+//   let d = b[Math.floor(Math.random() * 10)];
+//   let e = b[Math.floor(Math.random() * 10)];
+//   let f = b[Math.floor(Math.random() * 10)];
+//   let g = b[Math.floor(Math.random() * 10)];
+//   let h = b[Math.floor(Math.random() * 10)];
+//   let i = b[Math.floor(Math.random() * 10)];
+//   let j = b[Math.floor(Math.random() * 10)];
+//   let k = b[Math.floor(Math.random() * 10)];
+//   let l = b[Math.floor(Math.random() * 10)];
+//   let a = z + "*" + c + d + e + f + g + h + i + j + k + l;
 
-  if (z != "undefined" && z != "") {
-    document.getElementById("suggest").innerHTML = a;
+//   if (z != "undefined" && z != "") {
+//     document.getElementById("suggest").innerHTML = a;
 
-    setTimeout(myShow, 2000)
-    setInterval(myBlank, 4000)
+//     setTimeout(myShow, 2000)
+//     setInterval(myBlank, 4000)
 
-    function myBlank() {
-      document.getElementById("suggest").style.display = "none";
-    }
+//     function myBlank() {
+//       document.getElementById("suggest").style.display = "none";
+//     }
 
-    function myShow() {
-      document.getElementById("suggest").style.display = "block";
-    }
-  }
-})
+//     function myShow() {
+//       document.getElementById("suggest").style.display = "block";
+//     }
+//   }
+// })
